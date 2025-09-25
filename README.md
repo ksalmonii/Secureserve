@@ -69,29 +69,7 @@ A production-ready, secure, cost-optimized static website deployed on AWS using 
    - **IAM Access Analyzer**: Create analyzer for S3 buckets  
    - **CloudWatch**: Metrics auto-enabled for CloudFront
 
----
 
-1. **`architecture-diagram.png`**  
-   - Draw.io or CloudCraft diagram showing:  
-     `User → CloudFront (HTTPS) → S3 (OAI, SSE-S3)`
-
-2. **`cloudfront-settings.png`**  
-   - CloudFront origin settings showing:  
-     - Origin domain = S3 bucket  
-     - Origin access = OAI  
-     - Default root object = `index.html`
-
-3. **`s3-bucket-policy.png`**  
-   - S3 bucket policy showing OAI ARN (redact account ID if needed)
-
-4. **`sse-s3-enabled.png`**  
-   - S3 → Properties → Default encryption = **SSE-S3 enabled**
-
-5. **`iam-access-analyzer.png`**  
-   - IAM Access Analyzer showing "No public findings"
-
-> 💡 **Pro Tip**: Use **Snagit**, **ShareX**, or macOS **Cmd+Shift+4** to capture clean screenshots.
----
 
 ## 🎯 Why This Matters for AWS SAA
 
